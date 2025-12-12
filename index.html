@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Retail Bridge | Smart Solutions for SMB Retailers</title>
-    <meta name="description" content="Get affordable AI automation, inventory & sales forecasting for your retail business. No tech skills needed. We bridge the gap between tech and your shop floor.">
-    <meta name="keywords" content="retail AI, small business automation, inventory forecasting, demand planning, sales prediction, affordable AI, Excel for retail, FBA optimization">
-    <meta name="author" content="AI Retail Bridge">
+    <title>RetailFlow AI | Sales Forecasting & Inventory Optimization</title>
+    <meta name="description" content="Stop guessing what to buy. Use AI to predict demand, optimize stock, and increase profits. Get a free inventory audit for your retail store.">
+    <meta name="keywords" content="retail sales forecast, inventory optimization AI, demand planning, small business automation, avoid overstock, stockout prediction, Amazon FBA analysis">
+    <meta name="author" content="RetailFlow AI">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="AI Retail Bridge | Smart Solutions for SMB Retailers">
-    <meta property="og:description" content="Affordable AI & data solutions for small retail businesses. From Excel to automation.">
+    <meta property="og:title" content="RetailFlow AI | Smart Inventory for Smart Retailers">
+    <meta property="og:description" content="Stop losing sales from empty shelves & money on slow-moving stock. Get a free AI-powered audit of your inventory.">
     <meta property="og:type" content="website">
-    <!-- Canonical URL (Update when you have a domain) -->
-    <link rel="canonical" href="https://yourusername.github.io/airetailbridge/">
+    <link rel="canonical" href="https://advortexspace-ctrl.github.io/retail/">
     
-    <!-- External Resources -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "AI Retail Bridge",
-      "description": "AI and automation consulting services for small and medium retail businesses",
-      "url": "https://yourusername.github.io/airetailbridge",
-      "email": "contact.airetailbridge@proton.me",
+      "name": "RetailFlow AI",
+      "description": "AI-powered sales forecasting and inventory optimization for retail businesses",
+      "url": "https://advortexspace-ctrl.github.io/retail/",
       "areaServed": "Worldwide",
-      "serviceType": "Business Consulting, Data Analysis, AI Implementation",
-      "priceRange": "$$"
+      "serviceType": "Data Analysis, Business Intelligence, Inventory Management"
     }
     </script>
     
     <style>
-        /* --- ROOT & BASE STYLES (Optimized from your original) --- */
         :root {
-            --primary: #4361ee;
-            --primary-dark: #3a56d4;
-            --secondary: #7209b7;
-            --accent: #f72585;
-            --success: #4cc9f0;
-            --dark: #1a1a2e;
-            --dark-light: #16213e;
-            --light: #f8f9fa;
-            --gray: #6c757d;
-            --light-gray: #e9ecef;
+            --primary: #2a6aff;
+            --primary-dark: #1d52cc;
+            --secondary: #00c897;
+            --accent: #ff6b8b;
+            --dark: #1a2238;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
             --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.1);
             --radius: 10px;
             --radius-lg: 16px;
             --transition: all 0.3s ease;
@@ -82,18 +74,20 @@
         .btn-primary { background: var(--gradient); color: white; box-shadow: var(--shadow); }
         .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
         .btn-secondary { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
-        .btn-secondary:hover { background: rgba(67, 97, 238, 0.05); transform: translateY(-3px); }
+        .btn-secondary:hover { background: rgba(42, 106, 255, 0.05); transform: translateY(-3px); }
+        .btn-accent { background: var(--accent); color: white; }
+        .btn-accent:hover { background: #ff5577; transform: translateY(-3px); }
 
-        /* --- DISCOUNT BANNER (Updated) --- */
+        /* --- DISCOUNT BANNER --- */
         .discount-banner {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 1001;
-            background: linear-gradient(90deg, #f72585, #b5179e, #f72585);
+            background: linear-gradient(90deg, var(--accent), #ff8e4d, var(--accent));
             color: white; text-align: center; padding: 10px 0; font-weight: 700;
             font-size: 0.9rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .discount-banner span { background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; margin-left: 5px; }
 
-        /* --- HEADER (Updated) --- */
+        /* --- HEADER --- */
         header {
             position: fixed; top: 40px; left: 0; width: 100%; z-index: 1000;
             padding: 1.2rem 0; transition: var(--transition);
@@ -111,28 +105,27 @@
         nav ul li a:hover:after { width: 100%; }
         .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; color: var(--dark); cursor: pointer; z-index: 1001; }
 
-        /* --- HERO SECTION (Completely Re-written) --- */
+        /* --- HERO SECTION (Now targets BUSINESS OWNER) --- */
         .hero { padding-top: 9rem; padding-bottom: 5rem; position: relative; overflow: hidden; }
-        .hero:before { content: ''; position: absolute; top: -50%; right: -20%; width: 80%; height: 150%; background: radial-gradient(circle, rgba(67, 97, 238, 0.05) 0%, transparent 70%); z-index: -1; }
+        .hero:before { content: ''; position: absolute; top: -50%; right: -20%; width: 80%; height: 150%; background: radial-gradient(circle, rgba(42, 106, 255, 0.05) 0%, transparent 70%); z-index: -1; }
         .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
         .hero-content h1 { font-size: 3rem; margin-bottom: 1.5rem; }
-        .hero-content p { font-size: 1.15rem; margin-bottom: 2rem; color: var(--dark-light); }
+        .hero-content p { font-size: 1.15rem; margin-bottom: 2rem; color: var(--dark); }
         .hero-btns { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
         .hero-image { position: relative; }
-        .image-placeholder {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            border-radius: var(--radius-lg); padding: 2rem;
+        .hero-visual {
+            background: white; border-radius: var(--radius-lg); padding: 2rem;
             box-shadow: var(--shadow-lg); border: 1px solid var(--light-gray);
-            text-align: center; color: var(--gray);
+            text-align: center;
         }
         .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
         .hero-stat { background: white; padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); }
         .hero-stat:hover { transform: translateY(-5px); }
-        .hero-stat-number { font-size: 2.2rem; font-weight: 800; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; line-height: 1; }
+        .hero-stat-number { font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1; }
         .hero-stat-text { font-weight: 600; color: var(--dark); font-size: 1rem; margin-top: 0.5rem; }
 
-        /* --- SERVICES SECTION (Core - Completely Re-written) --- */
-        .services { background-color: var(--light); }
+        /* --- SERVICES (Now YOUR SERVICES for clients) --- */
+        .services { background-color: #f8f9fa; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .service-card {
             background: white; border-radius: var(--radius-lg); padding: 2rem;
@@ -143,19 +136,24 @@
         .service-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
         .service-icon { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: white; }
         .service-features { list-style: none; margin: 1.5rem 0; flex-grow: 1; }
-        .service-features li { padding: 0.5rem 0; color: var(--dark-light); position: relative; padding-left: 1.8rem; }
-        .service-features li:before { content: '✓'; position: absolute; left: 0; color: var(--success); font-weight: bold; }
+        .service-features li { padding: 0.5rem 0; color: var(--dark); position: relative; padding-left: 1.8rem; }
+        .service-features li:before { content: '✓'; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
         .service-price { font-size: 1.8rem; font-weight: 700; color: var(--primary); margin: 1.5rem 0 1rem; }
         .service-price span { font-size: 0.9rem; color: var(--gray); font-weight: 500; }
-        .price-note { font-size: 0.85rem; color: var(--gray); font-style: italic; margin-top: -0.5rem; }
 
-        /* --- AUDIT SECTION (Re-written) --- */
-        .free-audit { background-color: white; }
+        /* --- PROCESS (Your personal workflow) --- */
+        .process { background-color: white; }
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .process-step { text-align: center; padding: 2rem; }
+        .process-icon { width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; }
+        .process-step h4 { margin-top: 1rem; color: var(--dark); }
+
+        /* --- AUDIT (CTA for the client) --- */
+        .free-audit { background-color: #f1f7ff; }
         .audit-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
         .audit-box {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 2.5rem; border-radius: var(--radius-lg);
-            box-shadow: var(--shadow); text-align: center;
+            background: white; padding: 2.5rem; border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg); text-align: center;
             border: 1px solid var(--light-gray);
         }
         .audit-steps { margin-top: 2rem; }
@@ -163,24 +161,22 @@
         .step-number { width: 40px; height: 40px; background: var(--gradient); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 1.2rem; flex-shrink: 0; }
         .step-content h4 { margin-bottom: 0.3rem; color: var(--dark); }
 
-        /* --- HOW IT WORKS / BRIDGE SECTION (New) --- */
-        .process { background-color: #f8f9fa; }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .process-step { text-align: center; padding: 2rem; }
-        .process-icon { width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; }
-        .process-step h4 { margin-top: 1rem; color: var(--dark); }
-
-        /* --- CONTACT & FOOTER (Updated) --- */
+        /* --- CONTACT FORM (Now for CLIENT inquiries) --- */
         .contact-section { background-color: white; }
         .floating-contact { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; display: flex; flex-direction: column; gap: 1rem; align-items: flex-end; }
         .contact-btn {
             display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; color: white; font-size: 1.5rem; text-decoration: none; box-shadow: var(--shadow-lg); transition: var(--transition);
         }
         .contact-btn.whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
-        .contact-btn.telegram { background: linear-gradient(135deg, #0088cc, #004d7a); }
         .contact-btn:hover { transform: translateY(-5px) scale(1.05); }
         .contact-label { position: absolute; right: 70px; background: var(--dark); color: white; padding: 0.5rem 1rem; border-radius: var(--radius); font-size: 0.85rem; white-space: nowrap; opacity: 0; transform: translateX(10px); transition: var(--transition); pointer-events: none; }
         .contact-btn:hover .contact-label { opacity: 1; transform: translateX(0); }
+
+        /* --- TRUST BADGES --- */
+        .trust-badges { display: flex; justify-content: center; gap: 2rem; margin: 3rem auto; flex-wrap: wrap; max-width: 1000px; }
+        .trust-badge { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.8rem; width: 140px; }
+        .trust-icon { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; box-shadow: var(--shadow); }
+        .trust-text { font-weight: 600; color: var(--dark); font-size: 0.95rem; }
 
         footer { background-color: var(--dark); color: white; padding: 4rem 0 2rem; }
         .footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; }
@@ -190,12 +186,6 @@
         .footer-links a { color: #b0b7c3; text-decoration: none; transition: var(--transition); }
         .footer-links a:hover { color: white; padding-left: 5px; }
         .copyright { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); color: #94a3b8; font-size: 0.9rem; }
-
-        /* --- TRUST BADGES (Updated) --- */
-        .trust-badges { display: flex; justify-content: center; gap: 2rem; margin: 3rem auto; flex-wrap: wrap; max-width: 1000px; }
-        .trust-badge { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.8rem; width: 140px; }
-        .trust-icon { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; box-shadow: var(--shadow); }
-        .trust-text { font-weight: 600; color: var(--dark); font-size: 0.95rem; }
 
         /* --- RESPONSIVE DESIGN --- */
         @media (max-width: 992px) {
@@ -235,14 +225,14 @@
 <body>
     <!-- Discount Banner -->
     <div class="discount-banner">
-        🚀 LIMITED OFFER: <span>FREE Process Audit</span> for your first client! 🚀
+        🔥 LIMITED OFFER: <span>FREE AI-Powered Inventory Audit</span> for the first 10 retailers! 🔥
     </div>
 
     <!-- Floating Contact -->
     <div class="floating-contact">
-        <a href="https://wa.me/15551234567?text=Hi%20AI%20Retail%20Bridge!%20I%20need%20help%20with%20a%20retail%20client." class="contact-btn whatsapp" target="_blank" rel="noopener">
+        <a href="https://wa.me/15551234567?text=Hi%20RetailFlow%20AI!%20I'd%20like%20to%20discuss%20a%20free%20inventory%20audit%20for%20my%20store." class="contact-btn whatsapp" target="_blank" rel="noopener">
             <i class="fab fa-whatsapp"></i>
-            <span class="contact-label">Expert Support</span>
+            <span class="contact-label">Chat on WhatsApp</span>
         </a>
     </div>
 
@@ -250,7 +240,7 @@
     <header id="header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <i class="fas fa-robot"></i>AI <span>Retail</span> Bridge
+                <i class="fas fa-chart-line"></i>Retail<span>Flow</span> AI
             </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
@@ -261,7 +251,7 @@
                     <li><a href="#services">Solutions</a></li>
                     <li><a href="#process">How It Works</a></li>
                     <li><a href="#audit">Free Audit</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Partner With Us</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
                 </ul>
             </nav>
         </div>
@@ -271,29 +261,29 @@
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>No-Tech AI for Small Retailers</h1>
-                <p>You find the clients. We provide the expertise. Together, we deliver <strong>affordable AI automation, inventory forecasting, and sales insights</strong> to small shops, local chains, and e-commerce sellers—without them needing a data scientist.</p>
-                <p>We are the <strong>bridge</strong> between complex technology and your client's cash register.</p>
+                <h1>Stop Guessing. Start Knowing.</h1>
+                <p>Your shop's sales data holds the secret to higher profits and fewer headaches. <strong>RetailFlow AI</strong> analyzes your past sales to predict future demand, so you always have the right stock—without the overstock.</p>
+                <p>Made for <strong>independent retailers, small chains, and e-commerce sellers</strong> who don't have a data scientist on staff.</p>
                 <div class="hero-btns">
-                    <a href="#services" class="btn btn-primary">See Ready-Made Solutions</a>
-                    <a href="#audit" class="btn btn-secondary">Get Free Audit Template</a>
+                    <a href="#audit" class="btn btn-primary">Claim Free Audit</a>
+                    <a href="#services" class="btn btn-secondary">See Solutions</a>
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <div class="hero-stat-number">+40%</div>
-                        <div class="hero-stat-text">Avg. Inventory Turnover Improvement</div>
+                        <div class="hero-stat-text">Avg. Inventory Turnover</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-number">< $500</div>
-                        <div class="hero-stat-text">Starting Project Cost for Client</div>
+                        <div class="hero-stat-number">-30%</div>
+                        <div class="hero-stat-text">Reduction in Stockouts</div>
                     </div>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-chart-network" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                    <h3>From Data to Decision</h3>
-                    <p>We translate sales data and spreadsheets into clear, actionable steps for business owners.</p>
+                <div class="hero-visual">
+                    <i class="fas fa-robot" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3>Your Personal AI Analyst</h3>
+                    <p>I work with you one-on-one to turn your spreadsheets into a clear, actionable plan for your business.</p>
                 </div>
             </div>
         </div>
@@ -304,109 +294,106 @@
         <div class="container">
             <div class="trust-badges">
                 <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-hands-helping"></i></div>
-                    <div class="trust-text">Partner-First Model</div>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                    <div class="trust-text">Clear Revenue Share</div>
-                </div>
-                <div class="trust-badge">
                     <div class="trust-icon"><i class="fas fa-user-tie"></i></div>
-                    <div class="trust-text">Expert Backend Support</div>
+                    <div class="trust-text">One-on-One Expert</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-icon"><i class="fas fa-lock"></i></div>
+                    <div class="trust-text">Your Data is Private</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-icon"><i class="fas fa-file-contract"></i></div>
+                    <div class="trust-text">No Long-Term Contracts</div>
                 </div>
                 <div class="trust-badge">
                     <div class="trust-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="trust-text">Quick 72h Audit</div>
+                    <div class="trust-text">Results in 72h</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services / Solutions (CORE) -->
+    <!-- Services -->
     <section class="services" id="services">
         <div class="container">
-            <h2>Turn-Key Solutions You Can Sell</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">We handle the complex tech and analysis. You present the simple, valuable solution to your client.</p>
+            <h2>Clear Solutions for Your Biggest Challenges</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">I provide specific, actionable reports—not just raw data. Here’s how I can help your business today.</p>
             
             <div class="services-grid">
-                <!-- Solution 1 -->
+                <!-- Service 1 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-boxes"></i></div>
                     <h3>Smart Inventory Forecast</h3>
-                    <p>Stop overstocking & stockouts. We analyze past sales to predict what to buy next.</p>
+                    <p>Know exactly what to order and when. Stop losing sales to empty shelves and money on dead stock.</p>
                     <ul class="service-features">
-                        <li>Demand prediction for next 3 months</li>
-                        <li>Simple Excel/Google Sheets report</li>
-                        <li>Identification of slow/fast movers</li>
-                        <li>Recommended order quantities</li>
+                        <li>3-month demand prediction for your top products</li>
+                        <li>Clear "Buy List" with recommended quantities</li>
+                        <li>Identification of slow & fast-moving items</li>
+                        <li>Seasonality & trend analysis report</li>
                     </ul>
-                    <div class="service-price">From $299<span> / project</span></div>
-                    <p class="price-note">Your commission: 30% ($90)</p>
-                    <a href="#contact" class="btn btn-primary">Offer This to a Client</a>
+                    <div class="service-price">$499<span> / one-time project</span></div>
+                    <a href="#contact" class="btn btn-primary">Get This Solution</a>
                 </div>
                 
-                <!-- Solution 2 -->
+                <!-- Service 2 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-store-alt"></i></div>
-                    <h3>Amazon FBA & E-com Optimization</h3>
-                    <p>Maximize profits for online sellers. Optimize listings, pricing, and replenishment.</p>
+                    <h3>Amazon FBA Profit Maximizer</h3>
+                    <p>For sellers using FBA. Optimize fees, pricing, and replenishment to boost your net margin.</p>
                     <ul class="service-features">
-                        <li>FBA fee & profitability analysis</li>
-                        <li>Replenishment alert setup</li>
-                        <li>Competitor price monitoring</li>
-                        <li>Stock-level dashboard</li>
+                        <li>FBA fee analysis & optimization tips</li>
+                        <li>Replenishment alert setup guide</li>
+                        <li>Competitor price monitoring strategy</li>
+                        <li>Stock-level health dashboard</li>
                     </ul>
-                    <div class="service-price">From $499<span> / project</span></div>
-                    <p class="price-note">Your commission: 25% ($125)</p>
-                    <a href="#contact" class="btn btn-primary">Offer This to a Client</a>
+                    <div class="service-price">$399<span> / one-time project</span></div>
+                    <a href="#contact" class="btn btn-primary">Optimize My FBA</a>
                 </div>
                 
-                <!-- Solution 3 -->
+                <!-- Service 3 -->
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-user-friends"></i></div>
-                    <h3>Customer Segmentation</h3>
-                    <p>Find out who your best customers are and how to sell more to them.</p>
+                    <h3>Customer Insight Report</h3>
+                    <p>Discover who your best customers are and create targeted promotions to make them buy more.</p>
                     <ul class="service-features">
-                        <li>RFM (Recency, Frequency, Monetary) analysis</li>
-                        <li>Identify top 20% valuable customers</li>
-                        <li>Personalized promotion ideas</li>
-                        <li>Loyalty program setup guide</li>
+                        <li>RFM (Value) segmentation of your customers</li>
+                        <li>Identification of top 20% valuable clients</li>
+                        <li>Personalized promotion ideas for each segment</li>
+                        <li>Simple loyalty program setup guide</li>
                     </ul>
-                    <div class="service-price">From $399<span> / project</span></div>
-                    <p class="price-note">Your commission: 30% ($120)</p>
-                    <a href="#contact" class="btn btn-primary">Offer This to a Client</a>
+                    <div class="service-price">$349<span> / one-time project</span></div>
+                    <a href="#contact" class="btn btn-primary">Understand My Customers</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works / The Bridge -->
+    <!-- Process -->
     <section class="process" id="process">
         <div class="container">
-            <h2>How the "Bridge" Works</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 1rem;">A clear partnership process designed for your success as a reseller.</p>
+            <h2>Simple & Transparent Process</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 1rem;">You focus on your business. I handle the deep data analysis. Here's how we work together:</p>
             
             <div class="process-steps">
                 <div class="process-step">
                     <div class="process-icon">1</div>
-                    <h4>You Find & Qualify</h4>
-                    <p>You find a retail client with a pain point (e.g., "I never know what to order"). You sign them up.</p>
+                    <h4>You Share Your Data</h4>
+                    <p>Send me your sales exports (Excel/CSV) or connect your Amazon/FBA account. I sign an NDA. All data is confidential.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-icon">2</div>
-                    <h4>We Audit & Analyze</h4>
-                    <p>You send us the client's data (sales exports, inventory lists). We conduct a deep-dive audit.</p>
+                    <h4>I Analyze & Build a Model</h4>
+                    <p>I analyze trends, seasonality, and patterns using specialized AI tools. I act as your personal data scientist.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-icon">3</div>
-                    <h4>We Deliver the Solution</h4>
-                    <p>We provide a clear report, forecast, or automated tool. You present it to the client as your solution.</p>
+                    <h4>You Get an Actionable Report</h4>
+                    <p>Receive a clear, plain-English report with forecasts, specific recommendations, and next steps—no tech jargon.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-icon">4</div>
-                    <h4>You Get Paid</h4>
-                    <p>Client pays you. You pay us the agreed backend fee. You keep a significant commission for the sale.</p>
+                    <h4>Implement & See Results</h4>
+                    <p>Use the insights to make smarter purchasing and pricing decisions. We can schedule a follow-up to track progress.</p>
                 </div>
             </div>
         </div>
@@ -416,82 +403,81 @@
     <section class="free-audit" id="audit">
         <div class="container audit-container">
             <div class="audit-content">
-                <h2>Free Partner's Audit Toolkit</h2>
-                <p>Close more deals with our ready-to-use audit framework. Impress clients by showing you understand their business deeply.</p>
+                <h2>Free AI-Powered Inventory Audit</h2>
+                <p>Not sure if this is right for you? Let me prove the value. Send me a sample of your data, and I'll provide a <strong>free mini-audit</strong> showing one key insight you're missing.</p>
                 <div class="audit-steps">
                     <div class="audit-step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h4>The Discovery Script</h4>
-                            <p>10 key questions to ask a potential retail client to uncover their biggest inefficiencies and readiness for automation.</p>
+                            <h4>Quick Intro Call</h4>
+                            <p>A 15-minute chat to understand your main challenge.</p>
                         </div>
                     </div>
                     <div class="audit-step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h4>Data Checklist</h4>
-                            <p>A simple list of files and reports (CSV, Excel) you need to request from the client to get started.</p>
+                            <h4>Share Sample Data</h4>
+                            <p>You share 3-6 months of sales data for 5-10 products.</p>
                         </div>
                     </div>
                     <div class="audit-step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h4>Sample Audit Report</h4>
-                            <p>A redacted example of a final deliverable to show potential clients the tangible value they'll receive.</p>
+                            <h4>Get Your Free Insight</h4>
+                            <p>I analyze it and send you one specific, valuable finding—for free.</p>
                         </div>
                     </div>
                 </div>
-                <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Message to Get the Toolkit</a>
+                <p><strong>No obligation.</strong> This is my way of showing you the power of data-driven decisions.</p>
             </div>
             <div class="audit-box">
-                <h3>Ready to Start?</h3>
-                <p><strong>Next Step:</strong> Contact us to get the partner toolkit and discuss your first potential client.</p>
-                <p>We'll set up a quick call to align on your niche and how we can best support you.</p>
+                <h3>Start Your Free Audit</h3>
+                <p>Click below to message me on WhatsApp. Let's find one opportunity to improve your margins.</p>
                 <div style="margin-top: 2rem;">
-                    <a href="mailto:partner.airetailbridge@proton.me?subject=Partner%20Inquiry" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">
-                        <i class="fas fa-envelope"></i> Email for Partnership
+                    <a href="https://wa.me/15551234567?text=Hi!%20I%20saw%20your%20RetailFlow%20AI%20site.%20I'm%20interested%20in%20the%20free%20inventory%20audit." class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message for Free Audit
                     </a>
                     <p style="font-size: 0.9rem; color: var(--gray); text-align: center;">
-                        <i class="fas fa-shield-alt"></i> All communications are confidential.
+                        <i class="fas fa-shield-alt"></i> Your data is confidential. I work under a strict NDA.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact / Partner CTA -->
+    <!-- Contact -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <h2>Become a Solution Provider</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">Stop just selling services. Start selling <strong>measurable results</strong>. Fill out the form to begin our partnership conversation.</p>
+            <h2>Ready to Make Data Your Greatest Asset?</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">Let's have a quick chat about your business. Fill out the form, and I'll get back to you within a few hours to schedule a call.</p>
             
             <div style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow); max-width: 800px; margin: 0 auto;">
-                <h3 style="text-align: center; margin-bottom: 2rem;">Partner Interest Form</h3>
-                <!-- Simple Form Action can be mailto: or a Google Form link -->
+                <h3 style="text-align: center; margin-bottom: 2rem;">Schedule Your Discovery Call</h3>
+                <!-- UPDATE THE FORM ACTION URL HERE -->
                 <form action="https://formspree.io/f/your-form-id-here" method="POST">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
                         <div>
-                            <label for="pName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name *</label>
-                            <input type="text" id="pName" name="partner_name" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+                            <label for="cName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name *</label>
+                            <input type="text" id="cName" name="client_name" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
                         </div>
                         <div>
-                            <label for="pEmail" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Email *</label>
-                            <input type="email" id="pEmail" name="partner_email" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+                            <label for="cBusiness" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Business Name *</label>
+                            <input type="text" id="cBusiness" name="business" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
                         </div>
                     </div>
                     <div style="margin-bottom: 1.5rem;">
-                        <label for="pBackground" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Background / Niche *</label>
-                        <input type="text" id="pBackground" name="partner_background" placeholder="e.g., 'I sell to local grocery stores', 'E-commerce consultant'" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+                        <label for="cEmail" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
+                        <input type="email" id="cEmail" name="client_email" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
                     </div>
                     <div style="margin-bottom: 2rem;">
-                        <label for="pMessage" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">What's your first client scenario? *</label>
-                        <textarea id="pMessage" name="message" rows="4" placeholder="Briefly describe a potential client you have in mind and their main challenge (e.g., 'A clothing boutique struggling with seasonal inventory...')" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius); font-family: 'Poppins', sans-serif;"></textarea>
+                        <label for="cChallenge" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Biggest Inventory/Sales Challenge *</label>
+                        <textarea id="cChallenge" name="challenge" rows="3" placeholder="e.g., 'We often run out of bestsellers', 'Too much money tied in old stock', 'Not sure how to price on Amazon'" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius); font-family: 'Poppins', sans-serif;"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">
-                        <i class="fas fa-handshake"></i> Apply for Partnership
+                        <i class="fas fa-calendar-check"></i> Schedule My Free Call
                     </button>
                     <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--gray);">
-                        We'll contact you within 24 hours to schedule an intro call.
+                        I'll contact you to find a convenient 20-minute slot.
                     </p>
                 </form>
             </div>
@@ -503,38 +489,36 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-column">
-                    <h3>AI Retail Bridge</h3>
-                    <p>We make AI and data-driven decision-making accessible and affordable for small and medium retail businesses worldwide.</p>
+                    <h3>RetailFlow AI</h3>
+                    <p>Bringing the power of AI and data forecasting to independent retailers and e-commerce sellers. No complex tech—just clear insights.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>For Partners</h3>
+                    <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#services">Our Solutions</a></li>
-                        <li><a href="#process">Partner Process</a></li>
-                        <li><a href="#audit">Audit Toolkit</a></li>
-                        <li><a href="#contact">Become a Partner</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Solutions</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#audit">Free Audit</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact & Support</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> partner.airetailbridge@proton.me</li>
                         <li><i class="fab fa-whatsapp"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-globe"></i> Global Remote Support</li>
+                        <li><i class="fas fa-globe"></i> Global Service</li>
+                        <li>Response Time: < 2 hours</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> AI Retail Bridge. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem;">This site is a template for lead generation. All service descriptions are examples.</p>
+                <p>&copy; <span id="currentYear"></span> RetailFlow AI. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;">This site is a template. Replace contact details and form action URL before use.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Basic JS for functionality (from your original, adapted)
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mainMenu = document.getElementById('mainMenu');
         mobileMenuBtn.addEventListener('click', () => {
@@ -543,13 +527,10 @@
                 ? '<i class="fas fa-times"></i>' 
                 : '<i class="fas fa-bars"></i>';
         });
-
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
             header.classList.toggle('scrolled', window.scrollY > 50);
         });
-
-        // Close mobile menu on link click
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', () => {
                 mainMenu.classList.remove('active');
