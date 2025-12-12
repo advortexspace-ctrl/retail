@@ -3,255 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RetailFlow AI | Sales Forecasting & Inventory Optimization</title>
-    <meta name="description" content="Stop guessing what to buy. Use AI to predict demand, optimize stock, and increase profits. Get a free inventory audit for your retail store.">
-    <meta name="keywords" content="retail sales forecast, inventory optimization AI, demand planning, small business automation, avoid overstock, stockout prediction, Amazon FBA analysis">
-    <meta name="author" content="RetailFlow AI">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="RetailFlow AI | Smart Inventory for Smart Retailers">
-    <meta property="og:description" content="Stop losing sales from empty shelves & money on slow-moving stock. Get a free AI-powered audit of your inventory.">
-    <meta property="og:type" content="website">
+    <title>Retail Intelligence Partners | AI-Driven Growth for Commerce</title>
+    <meta name="description" content="Strategic AI implementation and demand intelligence for ambitious retail brands. Move from intuition to algorithmic precision.">
+    <meta name="keywords" content="retail intelligence, demand forecasting, inventory optimization, strategic AI, Amazon FBA consulting, customer analytics">
+    <meta name="author" content="Retail Intelligence Partners">
     <link rel="canonical" href="https://advortexspace-ctrl.github.io/retail/">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "RetailFlow AI",
-      "description": "AI-powered sales forecasting and inventory optimization for retail businesses",
-      "url": "https://advortexspace-ctrl.github.io/retail/",
-      "areaServed": "Worldwide",
-      "serviceType": "Data Analysis, Business Intelligence, Inventory Management"
-    }
-    </script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2a6aff;
-            --primary-dark: #1d52cc;
-            --secondary: #00c897;
-            --accent: #ff6b8b;
-            --dark: #1a2238;
+            --primary: #0f172a; /* Dark Navy */
+            --primary-light: #1e293b;
+            --secondary: #0d9488; /* Dark Teal */
+            --accent: #c2410c; /* Burnt Orange */
             --light: #f8fafc;
+            --dark: #0f172a;
             --gray: #64748b;
-            --light-gray: #e2e8f0;
-            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.1);
-            --radius: 10px;
+            --gray-light: #cbd5e1;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            --shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+            --radius: 8px;
             --radius-lg: 16px;
-            --transition: all 0.3s ease;
         }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.75;
             color: var(--dark);
             background-color: var(--light);
             overflow-x: hidden;
-            padding-top: 40px;
+            padding-top: 50px;
         }
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
-        h1 { font-size: 2.8rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        h2 { font-size: 2.2rem; color: var(--dark); text-align: center; margin-bottom: 3rem; position: relative; }
-        h2:after { content: ''; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background: var(--gradient); border-radius: 2px; }
-        h3 { font-size: 1.6rem; }
-        p { margin-bottom: 1.2rem; color: var(--gray); }
-        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-        section { padding: 5rem 0; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.2; }
+        h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 1.5rem; }
+        h2 { font-size: 2.75rem; color: var(--primary); text-align: center; margin-bottom: 3.5rem; position: relative; }
+        h2:after { content: ''; position: absolute; bottom: -1.2rem; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--secondary); border-radius: 2px; }
+        h3 { font-size: 1.75rem; color: var(--primary-light); margin-bottom: 1rem; }
+        p { margin-bottom: 1.5rem; color: var(--gray); font-size: 1.125rem; }
+        .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 6rem 0; }
         .btn {
             display: inline-flex; align-items: center; justify-content: center;
-            padding: 0.9rem 2.2rem; border-radius: 50px; font-weight: 600;
-            text-decoration: none; transition: var(--transition); border: none;
-            cursor: pointer; font-size: 1rem;
+            padding: 1.1rem 2.8rem; border-radius: var(--radius);
+            font-weight: 600; font-size: 1.05rem; text-decoration: none;
+            transition: var(--transition); border: none; cursor: pointer;
         }
-        .btn-primary { background: var(--gradient); color: white; box-shadow: var(--shadow); }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
-        .btn-secondary { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
-        .btn-secondary:hover { background: rgba(42, 106, 255, 0.05); transform: translateY(-3px); }
-        .btn-accent { background: var(--accent); color: white; }
-        .btn-accent:hover { background: #ff5577; transform: translateY(-3px); }
+        .btn-primary { background-color: var(--primary); color: white; }
+        .btn-primary:hover { background-color: var(--primary-light); transform: translateY(-3px); box-shadow: var(--shadow); }
+        .btn-secondary { background-color: transparent; color: var(--primary); border: 2px solid var(--gray-light); }
+        .btn-secondary:hover { border-color: var(--primary); transform: translateY(-3px); }
 
-        /* --- DISCOUNT BANNER --- */
-        .discount-banner {
-            position: fixed; top: 0; left: 0; width: 100%; z-index: 1001;
-            background: linear-gradient(90deg, var(--accent), #ff8e4d, var(--accent));
-            color: white; text-align: center; padding: 10px 0; font-weight: 700;
-            font-size: 0.9rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .discount-banner span { background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; margin-left: 5px; }
-
-        /* --- HEADER --- */
+        /* --- Premium Header --- */
         header {
-            position: fixed; top: 40px; left: 0; width: 100%; z-index: 1000;
-            padding: 1.2rem 0; transition: var(--transition);
+            position: fixed; top: 50px; left: 0; width: 100%; z-index: 1000;
+            padding: 1.5rem 0; transition: var(--transition);
         }
-        header.scrolled { background-color: rgba(255, 255, 255, 0.97); backdrop-filter: blur(8px); padding: 0.8rem 0; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); top: 0; }
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px); padding: 1rem 0; top: 0;
+            box-shadow: 0 5px 30px rgba(15, 23, 42, 0.08);
+        }
         .header-container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.7rem; font-weight: 800; color: var(--dark); text-decoration: none; display: flex; align-items: center; }
-        .logo span { color: var(--primary); }
-        .logo i { margin-right: 0.5rem; background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .logo { font-size: 1.8rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--secondary); }
         nav ul { display: flex; list-style: none; }
-        nav ul li { margin-left: 2rem; }
-        nav ul li a { text-decoration: none; color: var(--dark); font-weight: 500; position: relative; padding: 0.5rem 0; transition: var(--transition); }
-        nav ul li a:after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gradient); transition: var(--transition); }
-        nav ul li a:hover { color: var(--primary); }
+        nav ul li { margin-left: 3rem; }
+        nav ul li a {
+            text-decoration: none; color: var(--primary-light); font-weight: 500;
+            font-size: 1.05rem; position: relative; padding: 0.5rem 0;
+        }
+        nav ul li a:after {
+            content: ''; position: absolute; bottom: 0; left: 0;
+            width: 0; height: 2px; background: var(--secondary); transition: var(--transition);
+        }
         nav ul li a:hover:after { width: 100%; }
-        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; color: var(--dark); cursor: pointer; z-index: 1001; }
+        .mobile-menu-btn { display: none; }
 
-        /* --- HERO SECTION (Now targets BUSINESS OWNER) --- */
-        .hero { padding-top: 9rem; padding-bottom: 5rem; position: relative; overflow: hidden; }
-        .hero:before { content: ''; position: absolute; top: -50%; right: -20%; width: 80%; height: 150%; background: radial-gradient(circle, rgba(42, 106, 255, 0.05) 0%, transparent 70%); z-index: -1; }
-        .hero-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .hero-content h1 { font-size: 3rem; margin-bottom: 1.5rem; }
-        .hero-content p { font-size: 1.15rem; margin-bottom: 2rem; color: var(--dark); }
-        .hero-btns { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+        /* --- Hero with subtle gradient --- */
+        .hero {
+            padding-top: 10rem; padding-bottom: 8rem; position: relative;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        .hero-container {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+        }
+        .hero-content p.lead { font-size: 1.3rem; color: var(--primary-light); font-weight: 400; }
+        .hero-btns { display: flex; gap: 1.2rem; margin-top: 3rem; }
         .hero-image { position: relative; }
         .hero-visual {
-            background: white; border-radius: var(--radius-lg); padding: 2rem;
-            box-shadow: var(--shadow-lg); border: 1px solid var(--light-gray);
-            text-align: center;
+            background: white; border-radius: var(--radius-lg); padding: 2.5rem;
+            box-shadow: var(--shadow-lg); border: 1px solid var(--gray-light);
         }
-        .hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
-        .hero-stat { background: white; padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; transition: var(--transition); border: 1px solid rgba(0,0,0,0.03); }
-        .hero-stat:hover { transform: translateY(-5px); }
-        .hero-stat-number { font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1; }
-        .hero-stat-text { font-weight: 600; color: var(--dark); font-size: 1rem; margin-top: 0.5rem; }
+        .stat { display: flex; align-items: baseline; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-light); }
+        .stat-number { font-size: 2.8rem; font-weight: 800; color: var(--secondary); margin-right: 1rem; }
+        .stat-text { font-weight: 600; color: var(--primary-light); }
 
-        /* --- SERVICES (Now YOUR SERVICES for clients) --- */
-        .services { background-color: #f8f9fa; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .service-card {
-            background: white; border-radius: var(--radius-lg); padding: 2rem;
-            box-shadow: var(--shadow); transition: var(--transition);
-            border-top: 4px solid var(--primary); border: 1px solid var(--light-gray);
-            height: 100%; display: flex; flex-direction: column;
+        /* --- Services as "Solutions" --- */
+        .solutions { background-color: white; }
+        .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 3rem; }
+        .solution-card {
+            background: var(--light); border-radius: var(--radius-lg); padding: 2.8rem;
+            border-left: 5px solid var(--secondary); transition: var(--transition);
+            border: 1px solid transparent;
         }
-        .service-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
-        .service-icon { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.5rem; color: white; }
-        .service-features { list-style: none; margin: 1.5rem 0; flex-grow: 1; }
-        .service-features li { padding: 0.5rem 0; color: var(--dark); position: relative; padding-left: 1.8rem; }
-        .service-features li:before { content: '✓'; position: absolute; left: 0; color: var(--secondary); font-weight: bold; }
-        .service-price { font-size: 1.8rem; font-weight: 700; color: var(--primary); margin: 1.5rem 0 1rem; }
-        .service-price span { font-size: 0.9rem; color: var(--gray); font-weight: 500; }
-
-        /* --- PROCESS (Your personal workflow) --- */
-        .process { background-color: white; }
-        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
-        .process-step { text-align: center; padding: 2rem; }
-        .process-icon { width: 80px; height: 80px; margin: 0 auto 1.5rem; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; }
-        .process-step h4 { margin-top: 1rem; color: var(--dark); }
-
-        /* --- AUDIT (CTA for the client) --- */
-        .free-audit { background-color: #f1f7ff; }
-        .audit-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-        .audit-box {
-            background: white; padding: 2.5rem; border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg); text-align: center;
-            border: 1px solid var(--light-gray);
+        .solution-card:hover {
+            transform: translateY(-10px); border-color: var(--gray-light);
+            box-shadow: var(--shadow-lg);
         }
-        .audit-steps { margin-top: 2rem; }
-        .audit-step { display: flex; align-items: flex-start; margin-bottom: 2rem; }
-        .step-number { width: 40px; height: 40px; background: var(--gradient); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin-right: 1.2rem; flex-shrink: 0; }
-        .step-content h4 { margin-bottom: 0.3rem; color: var(--dark); }
-
-        /* --- CONTACT FORM (Now for CLIENT inquiries) --- */
-        .contact-section { background-color: white; }
-        .floating-contact { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; display: flex; flex-direction: column; gap: 1rem; align-items: flex-end; }
-        .contact-btn {
-            display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; color: white; font-size: 1.5rem; text-decoration: none; box-shadow: var(--shadow-lg); transition: var(--transition);
+        .solution-icon { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1.8rem; }
+        .solution-features { list-style: none; margin: 2rem 0; }
+        .solution-features li {
+            padding: 0.7rem 0; color: var(--primary-light);
+            position: relative; padding-left: 2rem;
         }
-        .contact-btn.whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); }
-        .contact-btn:hover { transform: translateY(-5px) scale(1.05); }
-        .contact-label { position: absolute; right: 70px; background: var(--dark); color: white; padding: 0.5rem 1rem; border-radius: var(--radius); font-size: 0.85rem; white-space: nowrap; opacity: 0; transform: translateX(10px); transition: var(--transition); pointer-events: none; }
-        .contact-btn:hover .contact-label { opacity: 1; transform: translateX(0); }
+        .solution-features li:before {
+            content: '→'; position: absolute; left: 0;
+            color: var(--secondary); font-weight: bold;
+        }
+        .solution-cta { margin-top: 2rem; font-weight: 600; color: var(--secondary); }
 
-        /* --- TRUST BADGES --- */
-        .trust-badges { display: flex; justify-content: center; gap: 2rem; margin: 3rem auto; flex-wrap: wrap; max-width: 1000px; }
-        .trust-badge { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.8rem; width: 140px; }
-        .trust-icon { width: 60px; height: 60px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; box-shadow: var(--shadow); }
-        .trust-text { font-weight: 600; color: var(--dark); font-size: 0.95rem; }
+        /* --- Premium Process --- */
+        .process { background-color: #f1f5f9; }
+        .process-container { position: relative; }
+        .process-line {
+            position: absolute; top: 100px; left: 50px; right: 50px; height: 2px;
+            background: var(--gray-light); z-index: 0;
+        }
+        .process-steps {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;
+            position: relative; z-index: 1;
+        }
+        .process-step { text-align: center; background: white; padding: 2.5rem; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+        .process-step .step-number {
+            width: 60px; height: 60px; background: var(--primary); color: white;
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; font-weight: 700; font-size: 1.5rem;
+            margin: 0 auto 1.5rem;
+        }
+        .process-step h4 { color: var(--primary); margin-bottom: 1rem; }
 
-        footer { background-color: var(--dark); color: white; padding: 4rem 0 2rem; }
-        .footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; }
-        .footer-column h3 { color: white; font-size: 1.2rem; margin-bottom: 1.5rem; }
+        /* --- CTA Audit --- */
+        .cta-audit {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white; text-align: center;
+        }
+        .cta-audit h2, .cta-audit p { color: white; }
+        .cta-audit h2:after { background: var(--accent); }
+        .cta-audit .btn-primary { background-color: white; color: var(--primary); font-weight: 700; }
+        .cta-audit .btn-primary:hover { background-color: var(--gray-light); }
+
+        /* --- Contact Form --- */
+        .contact { background-color: white; }
+        .form-wrapper {
+            background: var(--light); padding: 4rem; border-radius: var(--radius-lg);
+            box-shadow: var(--shadow); max-width: 900px; margin: 0 auto;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+        .form-group { margin-bottom: 1.8rem; }
+        .form-group label { display: block; margin-bottom: 0.7rem; font-weight: 600; color: var(--primary); }
+        .form-control {
+            width: 100%; padding: 1.1rem 1.5rem; border: 1px solid var(--gray-light);
+            border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;
+            transition: var(--transition); background: white;
+        }
+        .form-control:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1); }
+
+        footer {
+            background-color: var(--primary); color: #cbd5e1; padding: 5rem 0 3rem;
+        }
+        .footer-container {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem; margin-bottom: 3rem;
+        }
+        .footer-column h3 { color: white; font-size: 1.3rem; margin-bottom: 1.5rem; }
         .footer-links { list-style: none; }
-        .footer-links li { margin-bottom: 0.7rem; }
-        .footer-links a { color: #b0b7c3; text-decoration: none; transition: var(--transition); }
-        .footer-links a:hover { color: white; padding-left: 5px; }
-        .copyright { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); color: #94a3b8; font-size: 0.9rem; }
+        .footer-links li { margin-bottom: 0.8rem; }
+        .footer-links a { color: #94a3b8; text-decoration: none; transition: var(--transition); }
+        .footer-links a:hover { color: white; }
+        .copyright {
+            text-align: center; padding-top: 3rem; border-top: 1px solid #334155;
+            color: #94a3b8; font-size: 0.9rem;
+        }
 
-        /* --- RESPONSIVE DESIGN --- */
         @media (max-width: 992px) {
-            h1 { font-size: 2.5rem; } h2 { font-size: 2rem; }
-            .hero-container, .audit-container { grid-template-columns: 1fr; gap: 3rem; }
-            .hero { padding-top: 8rem; }
+            h1 { font-size: 2.8rem; } h2 { font-size: 2.3rem; }
+            .hero-container { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: repeat(2, 1fr); }
+            .process-line { display: none; }
         }
         @media (max-width: 768px) {
-            body { padding-top: 35px; }
-            .discount-banner { font-size: 0.8rem; padding: 8px 0; }
-            h1 { font-size: 2.2rem; } h2 { font-size: 1.8rem; }
+            body { padding-top: 40px; }
+            .container { padding: 0 1.5rem; }
+            h1 { font-size: 2.3rem; } h2 { font-size: 2rem; }
             section { padding: 4rem 0; }
-            .mobile-menu-btn { display: block; }
-            nav ul {
-                position: fixed; top: 0; right: -100%; width: 280px; height: 100vh;
-                background: white; flex-direction: column; align-items: center;
-                justify-content: center; transition: var(--transition);
-                box-shadow: -5px 0 15px rgba(0,0,0,0.05); padding: 2rem;
-            }
-            nav ul.active { right: 0; }
-            nav ul li { margin: 1rem 0; }
-            .hero-btns { flex-direction: column; align-items: stretch; }
-            .btn { width: 100%; text-align: center; justify-content: center; }
-            .floating-contact { bottom: 1rem; right: 1rem; }
-            .contact-btn { width: 55px; height: 55px; font-size: 1.3rem; }
-            .trust-badges { gap: 1.5rem; }
-            .trust-badge { width: 120px; }
-        }
-        @media (max-width: 480px) {
-            .container { padding: 0 1.2rem; }
-            h1 { font-size: 2rem; } h2 { font-size: 1.6rem; }
-            .service-card, .audit-box { padding: 1.8rem; }
-            .hero-stats { grid-template-columns: 1fr; }
+            nav ul { display: none; }
+            .mobile-menu-btn { display: block; background: none; border: none; font-size: 1.5rem; color: var(--primary); cursor: pointer; }
+            .hero-btns { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+            .form-row { grid-template-columns: 1fr; }
+            .form-wrapper { padding: 2.5rem; }
+            .process-steps { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Discount Banner -->
-    <div class="discount-banner">
-        🔥 LIMITED OFFER: <span>FREE AI-Powered Inventory Audit</span> for the first 10 retailers! 🔥
-    </div>
-
-    <!-- Floating Contact -->
-    <div class="floating-contact">
-        <a href="https://wa.me/15551234567?text=Hi%20RetailFlow%20AI!%20I'd%20like%20to%20discuss%20a%20free%20inventory%20audit%20for%20my%20store." class="contact-btn whatsapp" target="_blank" rel="noopener">
-            <i class="fab fa-whatsapp"></i>
-            <span class="contact-label">Chat on WhatsApp</span>
-        </a>
-    </div>
-
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                <i class="fas fa-chart-line"></i>Retail<span>Flow</span> AI
-            </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <a href="#" class="logo">Retail<span>Intelligence</span>Partners</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
             <nav>
                 <ul id="mainMenu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Solutions</a></li>
-                    <li><a href="#process">How It Works</a></li>
-                    <li><a href="#audit">Free Audit</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#audit" class="btn btn-primary">Request Audit</a></li>
                 </ul>
             </nav>
         </div>
@@ -261,108 +229,64 @@
     <section class="hero" id="home">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1>Stop Guessing. Start Knowing.</h1>
-                <p>Your shop's sales data holds the secret to higher profits and fewer headaches. <strong>RetailFlow AI</strong> analyzes your past sales to predict future demand, so you always have the right stock—without the overstock.</p>
-                <p>Made for <strong>independent retailers, small chains, and e-commerce sellers</strong> who don't have a data scientist on staff.</p>
+                <h1>Where Data Becomes Your Competitive Edge</h1>
+                <p class="lead">We implement strategic AI and demand intelligence for commerce leaders. Replace intuition with algorithmic precision to optimize capital allocation, inventory turns, and customer lifetime value.</p>
                 <div class="hero-btns">
-                    <a href="#audit" class="btn btn-primary">Claim Free Audit</a>
-                    <a href="#services" class="btn btn-secondary">See Solutions</a>
+                    <a href="#solutions" class="btn btn-primary">Explore Our Solutions</a>
+                    <a href="#audit" class="btn btn-secondary">Book a Strategy Call</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">+40%</div>
-                        <div class="hero-stat-text">Avg. Inventory Turnover</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-number">-30%</div>
-                        <div class="hero-stat-text">Reduction in Stockouts</div>
-                    </div>
+                <div class="stat">
+                    <div class="stat-number">+35%</div>
+                    <div class="stat-text">Average improvement in inventory turnover within the first quarter.</div>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="hero-visual">
-                    <i class="fas fa-robot" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;"></i>
-                    <h3>Your Personal AI Analyst</h3>
-                    <p>I work with you one-on-one to turn your spreadsheets into a clear, actionable plan for your business.</p>
+                    <i class="fas fa-chess-king" style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 1.5rem;"></i>
+                    <h3>Your Strategic Advantage</h3>
+                    <p>Every engagement is led by a senior partner who oversees a dedicated team of specialists in data science and supply chain analytics.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Badges -->
-    <section class="trust-section">
+    <!-- Solutions -->
+    <section class="solutions" id="solutions">
         <div class="container">
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-user-tie"></i></div>
-                    <div class="trust-text">One-on-One Expert</div>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-lock"></i></div>
-                    <div class="trust-text">Your Data is Private</div>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-file-contract"></i></div>
-                    <div class="trust-text">No Long-Term Contracts</div>
-                </div>
-                <div class="trust-badge">
-                    <div class="trust-icon"><i class="fas fa-bolt"></i></div>
-                    <div class="trust-text">Results in 72h</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Clear Solutions for Your Biggest Challenges</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">I provide specific, actionable reports—not just raw data. Here’s how I can help your business today.</p>
-            
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-boxes"></i></div>
-                    <h3>Smart Inventory Forecast</h3>
-                    <p>Know exactly what to order and when. Stop losing sales to empty shelves and money on dead stock.</p>
-                    <ul class="service-features">
-                        <li>3-month demand prediction for your top products</li>
-                        <li>Clear "Buy List" with recommended quantities</li>
-                        <li>Identification of slow & fast-moving items</li>
-                        <li>Seasonality & trend analysis report</li>
+            <h2>Specialized Intelligence Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Proprietary Demand Intelligence</h3>
+                    <p>A dynamic forecasting model that accounts for seasonality, market trends, and promotional impact, delivering a prioritized procurement strategy.</p>
+                    <ul class="solution-features">
+                        <li>Multi-factor predictive analytics</li>
+                        <li>SKU-level "Next 90 Days" forecast</li>
+                        <li>Risk-adjusted order planning</li>
                     </ul>
-                    <div class="service-price">$499<span> / one-time project</span></div>
-                    <a href="#contact" class="btn btn-primary">Get This Solution</a>
+                    <div class="solution-cta">Starting at $2,500 | <a href="#audit">Inquire</a></div>
                 </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-store-alt"></i></div>
-                    <h3>Amazon FBA Profit Maximizer</h3>
-                    <p>For sellers using FBA. Optimize fees, pricing, and replenishment to boost your net margin.</p>
-                    <ul class="service-features">
-                        <li>FBA fee analysis & optimization tips</li>
-                        <li>Replenishment alert setup guide</li>
-                        <li>Competitor price monitoring strategy</li>
-                        <li>Stock-level health dashboard</li>
+                <div class="solution-card">
+                    <div class="solution-icon"><i class="fas fa-warehouse"></i></div>
+                    <h3>FBA Equity & Liquidity Audit</h3>
+                    <p>Maximize the return on capital tied in Amazon's fulfillment network. We analyze fees, storage, and replenishment cycles to free up cash flow.</p>
+                    <ul class="solution-features">
+                        <li>Storage fee optimization analysis</li>
+                        <li>Liquidity scoring for your ASINs</li>
+                        <li>Automated replenishment blueprint</li>
                     </ul>
-                    <div class="service-price">$399<span> / one-time project</span></div>
-                    <a href="#contact" class="btn btn-primary">Optimize My FBA</a>
+                    <div class="solution-cta">Starting at $1,800 | <a href="#audit">Inquire</a></div>
                 </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-user-friends"></i></div>
-                    <h3>Customer Insight Report</h3>
-                    <p>Discover who your best customers are and create targeted promotions to make them buy more.</p>
-                    <ul class="service-features">
-                        <li>RFM (Value) segmentation of your customers</li>
-                        <li>Identification of top 20% valuable clients</li>
-                        <li>Personalized promotion ideas for each segment</li>
-                        <li>Simple loyalty program setup guide</li>
+                <div class="solution-card">
+                    <div class="solution-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Customer Equity Expansion</h3>
+                    <p>Move beyond basic segmentation. Identify high-LTV customer cohorts and develop targeted strategies to increase their lifetime value.</p>
+                    <ul class="solution-features">
+                        <li>Cohort-based CLV analysis</li>
+                        <li>Personalized engagement roadmaps</li>
+                        <li>Retention strategy design</li>
                     </ul>
-                    <div class="service-price">$349<span> / one-time project</span></div>
-                    <a href="#contact" class="btn btn-primary">Understand My Customers</a>
+                    <div class="solution-cta">Starting at $2,200 | <a href="#audit">Inquire</a></div>
                 </div>
             </div>
         </div>
@@ -370,114 +294,84 @@
 
     <!-- Process -->
     <section class="process" id="process">
-        <div class="container">
-            <h2>Simple & Transparent Process</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 1rem;">You focus on your business. I handle the deep data analysis. Here's how we work together:</p>
-            
+        <div class="container process-container">
+            <h2>A Methodical Partnership</h2>
+            <div class="process-line"></div>
             <div class="process-steps">
                 <div class="process-step">
-                    <div class="process-icon">1</div>
-                    <h4>You Share Your Data</h4>
-                    <p>Send me your sales exports (Excel/CSV) or connect your Amazon/FBA account. I sign an NDA. All data is confidential.</p>
+                    <div class="step-number">1</div>
+                    <h4>Strategic Scoping</h4>
+                    <p>Your dedicated partner conducts a deep-dive discovery to align on key business objectives and define success metrics.</p>
                 </div>
                 <div class="process-step">
-                    <div class="process-icon">2</div>
-                    <h4>I Analyze & Build a Model</h4>
-                    <p>I analyze trends, seasonality, and patterns using specialized AI tools. I act as your personal data scientist.</p>
+                    <div class="step-number">2</div>
+                    <h4>Technical Deep Dive</h4>
+                    <p>Our specialist team performs the data audit and model development, guided by clear deliverables.</p>
                 </div>
                 <div class="process-step">
-                    <div class="process-icon">3</div>
-                    <h4>You Get an Actionable Report</h4>
-                    <p>Receive a clear, plain-English report with forecasts, specific recommendations, and next steps—no tech jargon.</p>
+                    <div class="step-number">3</div>
+                    <h4>Insight Delivery</h4>
+                    <p>You receive an executive briefing and a detailed, actionable intelligence report—not just raw data.</p>
                 </div>
                 <div class="process-step">
-                    <div class="process-icon">4</div>
-                    <h4>Implement & See Results</h4>
-                    <p>Use the insights to make smarter purchasing and pricing decisions. We can schedule a follow-up to track progress.</p>
+                    <div class="step-number">4</div>
+                    <h4>Implementation Support</h4>
+                    <p>Your partner remains available for follow-up to ensure seamless integration of insights into your operations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Free Audit -->
-    <section class="free-audit" id="audit">
-        <div class="container audit-container">
-            <div class="audit-content">
-                <h2>Free AI-Powered Inventory Audit</h2>
-                <p>Not sure if this is right for you? Let me prove the value. Send me a sample of your data, and I'll provide a <strong>free mini-audit</strong> showing one key insight you're missing.</p>
-                <div class="audit-steps">
-                    <div class="audit-step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Quick Intro Call</h4>
-                            <p>A 15-minute chat to understand your main challenge.</p>
-                        </div>
-                    </div>
-                    <div class="audit-step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Share Sample Data</h4>
-                            <p>You share 3-6 months of sales data for 5-10 products.</p>
-                        </div>
-                    </div>
-                    <div class="audit-step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Get Your Free Insight</h4>
-                            <p>I analyze it and send you one specific, valuable finding—for free.</p>
-                        </div>
-                    </div>
-                </div>
-                <p><strong>No obligation.</strong> This is my way of showing you the power of data-driven decisions.</p>
-            </div>
-            <div class="audit-box">
-                <h3>Start Your Free Audit</h3>
-                <p>Click below to message me on WhatsApp. Let's find one opportunity to improve your margins.</p>
-                <div style="margin-top: 2rem;">
-                    <a href="https://wa.me/15551234567?text=Hi!%20I%20saw%20your%20RetailFlow%20AI%20site.%20I'm%20interested%20in%20the%20free%20inventory%20audit." class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Message for Free Audit
-                    </a>
-                    <p style="font-size: 0.9rem; color: var(--gray); text-align: center;">
-                        <i class="fas fa-shield-alt"></i> Your data is confidential. I work under a strict NDA.
-                    </p>
-                </div>
-            </div>
+    <!-- CTA Audit -->
+    <section class="cta-audit" id="audit">
+        <div class="container">
+            <h2>Request a Complementary Diagnostic</h2>
+            <p style="max-width: 700px; margin: 0 auto 3rem;">Submit your details for a confidential conversation about your most pressing inventory or growth challenge. We'll provide a high-level diagnostic of potential opportunity areas.</p>
+            <a href="#contact" class="btn btn-primary">Schedule Your Diagnostic Call</a>
         </div>
     </section>
 
     <!-- Contact -->
-    <section class="contact-section" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2>Ready to Make Data Your Greatest Asset?</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">Let's have a quick chat about your business. Fill out the form, and I'll get back to you within a few hours to schedule a call.</p>
-            
-            <div style="background: white; padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow); max-width: 800px; margin: 0 auto;">
-                <h3 style="text-align: center; margin-bottom: 2rem;">Schedule Your Discovery Call</h3>
-                <!-- UPDATE THE FORM ACTION URL HERE -->
-                <form action="https://formspree.io/f/your-form-id-here" method="POST">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                        <div>
-                            <label for="cName" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name *</label>
-                            <input type="text" id="cName" name="client_name" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+            <h2>Begin the Conversation</h2>
+            <div class="form-wrapper">
+                <form action="https://formspree.io/f/YOUR-FORM-ID-HERE" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
                         </div>
-                        <div>
-                            <label for="cBusiness" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Business Name *</label>
-                            <input type="text" id="cBusiness" name="business" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+                        <div class="form-group">
+                            <label for="company">Company / Brand *</label>
+                            <input type="text" id="company" name="company" class="form-control" required>
                         </div>
                     </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="cEmail" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address *</label>
-                        <input type="email" id="cEmail" name="client_email" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius);">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Business Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="revenue">Annual Revenue Band *</label>
+                            <select id="revenue" name="revenue" class="form-control" required>
+                                <option value="" disabled selected>Select range</option>
+                                <option value="<500k">Under $500K</option>
+                                <option value="500k-2m">$500K - $2M</option>
+                                <option value="2m-10m">$2M - $10M</option>
+                                <option value="10m+">$10M+</option>
+                            </select>
+                        </div>
                     </div>
-                    <div style="margin-bottom: 2rem;">
-                        <label for="cChallenge" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Biggest Inventory/Sales Challenge *</label>
-                        <textarea id="cChallenge" name="challenge" rows="3" placeholder="e.g., 'We often run out of bestsellers', 'Too much money tied in old stock', 'Not sure how to price on Amazon'" required style="width: 100%; padding: 1rem; border: 1px solid var(--light-gray); border-radius: var(--radius); font-family: 'Poppins', sans-serif;"></textarea>
+                    <div class="form-group">
+                        <label for="challenge">Primary Challenge or Objective *</label>
+                        <textarea id="challenge" name="challenge" rows="4" class="form-control" required placeholder="e.g., 'We need to reduce carrying costs by 20%', 'Struggling with forecasting accuracy for new product launches', 'Want to systematize our Amazon FBA replenishment'"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem; font-size: 1.1rem;">
-                        <i class="fas fa-calendar-check"></i> Schedule My Free Call
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.3rem; font-size: 1.1rem;">
+                        Submit for Strategy Call
                     </button>
-                    <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--gray);">
-                        I'll contact you to find a convenient 20-minute slot.
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                        All inquiries are handled with strict confidentiality.
                     </p>
                 </form>
             </div>
@@ -489,54 +383,44 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-column">
-                    <h3>RetailFlow AI</h3>
-                    <p>Bringing the power of AI and data forecasting to independent retailers and e-commerce sellers. No complex tech—just clear insights.</p>
+                    <h3>Retail Intelligence Partners</h3>
+                    <p>Strategic advisors in data-driven growth for modern commerce.</p>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Solutions</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#audit">Free Audit</a></li>
+                        <li><a href="#solutions">Demand Intelligence</a></li>
+                        <li><a href="#solutions">FBA Capital Audit</a></li>
+                        <li><a href="#solutions">Customer Equity</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact & Support</h3>
+                    <h3>Connect</h3>
                     <ul class="footer-links">
-                        <li><i class="fab fa-whatsapp"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-globe"></i> Global Service</li>
-                        <li>Response Time: < 2 hours</li>
+                        <li><a href="#contact">Request a Call</a></li>
+                        <li>Email: strategy@retailintelpartners.com</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> RetailFlow AI. All rights reserved.</p>
-                <p style="margin-top: 0.5rem; font-size: 0.8rem;">This site is a template. Replace contact details and form action URL before use.</p>
+                <p>&copy; <span id="currentYear"></span> Retail Intelligence Partners. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainMenu = document.getElementById('mainMenu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mainMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = mainMenu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
         window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
         });
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                mainMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        // Simple mobile menu toggle (you can expand this)
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mainMenu = document.getElementById('mainMenu');
+        if(mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mainMenu.style.display = mainMenu.style.display === 'flex' ? 'none' : 'flex';
             });
-        });
+        }
     </script>
 </body>
 </html>
